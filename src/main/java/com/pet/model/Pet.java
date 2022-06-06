@@ -15,8 +15,7 @@ import lombok.Data;
 
 @Data
 @Entity
-@Table(name = "DOG")
-public class Dog {
+public class Pet {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -31,6 +30,6 @@ public class Dog {
 	
 	
 	@PrePersist
-	void placedAt() {fecha = new Date();}
+	void tiene_chip() {tiene_chip = 0;}
 
 }

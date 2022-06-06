@@ -1,6 +1,6 @@
-drop table DOG if exists;
+drop table PET if exists;
 
-create table if not exists DOG (
+create table if not exists PET (
   id int not null,
   nombre varchar(25) not null,
   fecha_nac DATETIME,
